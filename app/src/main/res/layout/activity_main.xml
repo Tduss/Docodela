@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@mipmap/back2">
+
+    <TextView
+        android:id="@+id/title_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:text="CALCULADORA DE IMC"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/txt_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/input_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_bg"
+        android:hint="Peso:"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:textColorHint="@color/design_default_color_background"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/input_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_bg"
+        android:hint="Altura:"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:textColorHint="@color/design_default_color_background"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/button_bg"
+        android:onClick="btnOnClickCalculator"
+        android:text="Calcular"
+        android:textColor="#fafafa"
+        android:textStyle="bold"
+        android:backgroundTint="@color/editColor"/>
+
+    <TextView
+        android:id="@+id/nominal_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="15dp"
+        android:hint="RESULTADO"
+        android:textAlignment="center"
+
+        android:textAllCaps="true"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/number_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="60sp"/>
+
+    <include layout="@layout/trdademark"/>
+
+</LinearLayout>
