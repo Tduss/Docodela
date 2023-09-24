@@ -12,10 +12,10 @@ from harvard extension school.
 Many of these tecnicians do not even know how to calculate the body mass index even leaning on
 their calculators. When they know how to they take time computing the formula while having a large
 queue of patients. This made me work on Docodela aiming to digitalize and facilitate the process of
-evaluating the nutrition condition/state of the ARV patients with a simple but fascinating bmi calculator.
+evaluating the nutrition condition/state of the patients on ART with a simple but fascinating bmi calculator.
 
 Docodela were developed in Androind Studio with Java as programming language. Therefore, the target of
-Docodela is health care system, specifically the technician who work directly with ARV patiants. The
+Docodela is health care system, specifically the technician who work directly with patients on ART. The
 app will reduce time comsuming attending patient and will digitalize this process of calculating bmi
 as so far they use printed tables to matrices the bmi of a given patient.
 
