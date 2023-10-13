@@ -8,10 +8,16 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/xina_5"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/xina_5"
         android:supportsRtl="true"
         android:theme="@style/Theme.Docodela"
         tools:targetApi="31">
+        <activity
+            android:name=".Criancas"
+            android:exported="false" />
+        <activity
+            android:name=".boysAdolescentes"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

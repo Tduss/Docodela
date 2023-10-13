@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back2"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    tools:context=".Criancas">
+
+    <TextView
+        android:id="@+id/txt_title_criancas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="0-5 anos"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="26sp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/resultado_nominal_criancas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="RESULTADO"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="26sp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/resultado_numerico_criancas"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:hint="0.0"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/design_default_color_error"-->
+<!--        android:textSize="60sp"-->
+<!--        android:textStyle="bold"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_criancas"
+        android:layout_marginVertical="15dp">
+
+        <EditText
+            android:id="@+id/input_year_criancas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:hint="Anos:"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/design_default_color_background"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/input_month_criancas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:hint="Mês:"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/design_default_color_background"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_weight_criancas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1.25"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Peso:"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="12dp"
+            android:paddingStart="15dp"
+            android:textColorHint="@color/design_default_color_background"
+            android:textStyle="bold"/>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp">
+
+            <RadioButton
+                android:id="@+id/btn_radio_F_criancas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="F"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/btn_radio_M_criancas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="M"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_calcular_criancas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/editColor"
+        android:onClick="btn_calcular_criancas"
+        android:text="Calcular"
+        android:textColor="#fafafa"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular_criancas"
+        android:layout_marginVertical="15dp">
+
+        <TextView
+            android:id="@+id/link_AD_Adolescentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginEnd="50dp"
+            android:text="0-18 anos"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/link_adultos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginStart="50dp"
+            android:text="Adultos"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
